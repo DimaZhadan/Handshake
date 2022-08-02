@@ -1,0 +1,305 @@
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+ul,
+ol,
+li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+
+html,
+body {
+   height: 100%;
+   line-height: 1;
+   font-size: 14px;
+   color: #000;
+   font-weight: 500;
+   font-family: 'Roboto', sans-serif;
+}
+
+/*------------*/
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+/*------------*/
+.container {
+   max-width: 1280px;
+   padding: 0px 15px;
+   margin: 0px auto;
+   box-sizing: content-box;
+}
+
+/*------------*/
+/*------Header------*/
+.header__top {
+   background: #0F1035;
+}
+
+.header-top__container {}
+
+._container {}
+
+.header-top__body {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 19px 0px 20px 0px;
+}
+
+.header-top__menu {
+   display: flex;
+}
+
+.header-top__item {}
+
+.header-top__item:not(:last-child) {
+   margin-right: 20px;
+}
+
+.header-top__link {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 129%;
+   color: #FFFFFF;
+}
+
+.header-top__link:hover {
+   text-decoration: underline;
+}
+
+.header-top__body a {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 129%;
+   color: #FFFFFF;
+}
+
+.header-top__body a:hover {
+   text-decoration: underline;
+}
+
+.header {
+   background: #FFFFFF;
+}
+
+.header__container {
+   position: sticky;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header__logo {
+   padding: 24px 0px;
+}
+
+.nav {}
+
+.header__nav {
+   
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.header__item {}
+
+.header__item:last-child {
+   margin-right: 130px;
+}
+
+.header__item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.header__link {
+   font-size: 14px;
+   line-height: 129%;
+   color: #000000;
+}
+
+.header__link:hover {
+   text-decoration: underline;
+}
+
+/*------Promotion------*/
+.promotion {
+   background: #D3F1F3;
+}
+
+.promotion__container {
+   display: flex;
+   align-items: center;
+   padding: 22px 0px 20px 0px;
+   justify-content: center;
+}
+
+.promotion__text {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 125%;
+}
+
+.promotion__link {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 125%;
+   color: #000000;
+}
+
+.promotion__link:hover {
+   text-decoration: underline;
+}
+
+/*------------*/
+/*------------*/
+/*------------*/
+/*------------*/
+/*------------*/
+
+/*Responsive*/
+/*992px - 1200px*/
+@media screen and (max-width: 1200px) {
+   .container {
+      width: 960px;
+   }
+}
+
+@media screen and (max-width: 992px) {
+   .container {
+      width: 720px;
+   }
+
+   .header__item:last-child {
+      margin-right: 0px;
+   }
+
+   .header-top__item:not(:last-child) {
+      margin-right: 10px;
+   }
+
+   .header__item:not(:last-child) {
+      margin-right: 10px;
+   }
+}
+
+/*576px-768px*/
+@media screen and (max-width: 768px) {
+   .container {
+      width: 540px;
+   }
+   .header__nav{
+      display: none;
+   }
+   .menu__icon {
+      z-index: 5;
+      display: flex;
+      position: relative;
+      width: 30px;
+      height: 18px;
+      cursor: pointer;
+      order: 999;
+      margin-left: auto;
+      top: 0px;
+      left: 0px;
+   }
+
+   .menu__icon span,
+   .menu__icon::before,
+   .menu__icon::after {
+      left: 0px;
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      transition: all 0.3s ease 0s;
+      background-color: #000;
+   }
+
+   .menu__icon::before,
+   .menu__icon::after {
+      content: "";
+   }
+
+   .menu__icon::before {
+      top: 0;
+   }
+
+   .menu__icon::after {
+      bottom: 0;
+   }
+
+   .menu__icon span {
+      top: 50%;
+      transform: scale(1) translate(0px, -50%);
+   }
+
+
+   .menu__icon._activete span {
+      transform: scale(0) translate(0px, -50%);
+   }
+
+   .menu__icon._activete::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0px, -50%);
+   }
+
+   .menu__icon._activete::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0px, 50%);
+   }
+
+   .header__nav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 40;
+      left: -200%;
+      width: 100%;
+      height: 100%;
+      margin-top: 120px;
+      overflow: auto;
+      order: 999;
+      z-index: 11;
+      padding: 0px 10px 0px 10px;
+      background-color: rgba(241, 237, 237, 0.9);
+      transition: left 0.3s ease 0s;
+   }
+
+   .header__nav._activete {
+      left: 0;
+   }
+}
+
+/*0-576px*/
+@media screen and (max-width: 576px) {
+   .container {
+      width: 90%;
+   }
+}
