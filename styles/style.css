@@ -124,7 +124,7 @@ body {
 .nav {}
 
 .header__nav {
-   
+
    display: flex;
    flex-wrap: wrap;
 }
@@ -178,8 +178,99 @@ body {
    text-decoration: underline;
 }
 
-/*------------*/
-/*------------*/
+.arrow__logo {
+   padding-top: 3px;
+   display: inline-block;
+}
+
+/*-------Up button-----*/
+.body__up-btn {
+   display: none;
+   position: fixed;
+   bottom: 50px;
+   right: 50px;
+   background: rgba(241, 237, 237, 0.5);
+}
+
+.body__up-btn img {
+   opacity: 0.75;
+}
+
+.body__up-btn:hover {
+   cursor: pointer;
+}
+
+/*-----Main-Page-------*/
+.main {}
+
+.mai__page {
+   background-image: url('../img/mainpage/01.png');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   padding-bottom: 41px;
+}
+
+.main-page__container {}
+
+.container {}
+
+.main-page__body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.main-page__title {
+   max-width: 488px;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 120%;
+   text-align: center;
+   padding: 33px 0px 12px 0px;
+}
+
+.main-page__text {
+   font-weight: 400;
+   font-size: 27px;
+   line-height: 148%;
+   margin-bottom: 316px;
+   text-align: center;
+}
+
+.main-page__email {
+   width: 340px;
+   border-radius: 3px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 125%;
+   color: rgba(0, 0, 0, 0.4);
+   padding: 13px 105px 13px 22px;
+   outline: none;
+}
+
+
+.main-page__btn {
+   background: #190083;
+   border-radius: 3px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 125%;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 13px 27px;
+   margin-left: 32px;
+}
+
+.main-page__btn:hover{
+   background: #13035e;
+   transition: 500ms;
+   cursor: pointer;
+}
+
 /*------------*/
 /*------------*/
 /*------------*/
@@ -215,9 +306,11 @@ body {
    .container {
       width: 540px;
    }
-   .header__nav{
+
+   .header__nav {
       display: none;
    }
+
    .menu__icon {
       z-index: 5;
       display: flex;
@@ -282,14 +375,18 @@ body {
       top: 40;
       left: -200%;
       width: 100%;
-      height: 100%;
+      height: 150px;
       margin-top: 120px;
       overflow: auto;
       order: 999;
       z-index: 11;
-      padding: 0px 10px 0px 10px;
+      padding: 10px 10px 0px 10px;
       background-color: rgba(241, 237, 237, 0.9);
       transition: left 0.3s ease 0s;
+   }
+
+   .header__nav li {
+      padding-top: 10px;
    }
 
    .header__nav._activete {
@@ -301,5 +398,16 @@ body {
 @media screen and (max-width: 576px) {
    .container {
       width: 90%;
+   }
+
+   .main-page__email {
+      width: 100%;
+   }
+   
+   
+   .main-page__btn {
+      width: 100%;
+      margin-left: 0px;
+      margin-top: 20px;
    }
 }
