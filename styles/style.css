@@ -57,7 +57,6 @@ body {
    box-sizing: content-box;
 }
 
-/*------------*/
 /*------Header------*/
 .header__top {
    background: #0F1035;
@@ -189,6 +188,7 @@ body {
    bottom: 50px;
    right: 50px;
    background: rgba(241, 237, 237, 0.5);
+   z-index: 20;
 }
 
 .body__up-btn img {
@@ -211,9 +211,7 @@ body {
    padding-bottom: 41px;
 }
 
-.main-page__container {
-
-}
+.main-page__container {}
 
 .container {}
 
@@ -249,7 +247,7 @@ body {
    font-size: 16px;
    line-height: 125%;
    color: rgba(0, 0, 0, 0.4);
-   padding: 13px 105px 13px 22px;
+   padding: 13px 0px 13px 22px;
    outline: none;
 }
 
@@ -266,24 +264,232 @@ body {
    margin-left: 32px;
 }
 
-.main-page__btn:hover{
-   background: #13035e;
+.main-page__btn:hover {
+   background: #6548e6;
    transition: 500ms;
    cursor: pointer;
+}
+
+/*-----Jobs-------*/
+.jubs {}
+
+.jubs__container {}
+
+.jubs__body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.jubs__title {
+   max-width: 422px;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 120%;
+   text-align: center;
+   padding: 92px 0px 53px 0px;
+}
+
+.jubs__text {
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 145%;
+}
+
+.jubs__items {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 89px;
+}
+
+.jubs__item {
+   width: 370px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.jubs__icon {
+   display: flex;
+   width: 90px;
+   height: 90px;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 38px;
+}
+
+.jobs-item__title {
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 109%;
+   padding-bottom: 20px;
+   text-align: center;
+}
+
+.jobs-item__text {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 156%;
+   text-align: center;
+}
+
+.jobs__link {
+   display: block;
+   background: #190083;
+   border-radius: 3px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 125%;
+   text-align: center;
+   color: #FFFFFF;
+   padding: 15px 24px 17px 24px;
+   margin: 80px 0px 110px 0px;
+}
+
+.jobs__link:hover {
+   text-decoration: underline;
+   background: #6548e6;
+   transition: 500ms;
+}
+
+/*------Expirience------*/
+.expirience {
+   position: relative;
+   background-image: url('../img/expirience/cover01.png');
+   background-position: left;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+.expirience__container {}
+
+.container {}
+
+.expirience__body {}
+
+.expirience__title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 120%;
+   text-align: center;
+   padding: 111px 0px 279px 0px;
+}
+
+.expirience__section {
+   position: relative;
+   background: #FFFFFF;
+   margin-left: 110px;
+   overflow: hidden;
+}
+
+.expirience__item.active {
+   display: block;
+}
+
+.expirience__item {
+   display: flex;
+   flex-direction: column;
+   height: 256px;
+   display: none;
+   padding: 78px 0px 0px 70px;
+}
+
+.expirience__logo {
+   float: left;
+}
+
+.text__sections {
+   max-width: 486px;
+   float: left;
+   margin: 0px 0px 0px 50px;
+}
+
+.title__text {
+   font-weight: 700;
+   font-size: 21px;
+   line-height: 200%;
+   padding-bottom: 17px;
+}
+
+.autor__text {
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 156%;
+}
+
+.autor__text span {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 156%;
+}
+
+.dots {
+   display: flex;
+   justify-content: center;
+   margin-top: 15px;
+   padding-bottom: 111px;
+}
+
+.dot.active {
+   background: #FFFFFF;
+}
+
+.dots span {
+   width: 15px;
+   height: 15px;
+   border: 2px solid #FFFFFF;
+   border-radius: 7.5px;
+   cursor: pointer;
+}
+
+.dots span:not(:last-child){
+   margin-right: 18px;
+}
+
+.dots span:last-child {
+   margin-right: 0;
+}
+
+.white-box{
+   position: absolute;
+   width: 35%;
+   height: 257px;
+   background: #FFFFFF;
+   top: 2056px;
+   right: 0;
+   z-index: 11;
 }
 
 /*------------*/
 /*------------*/
 /*------------*/
-
+/*------------*/
+/*------------*/
+/*------------*/
+/*------------*/
 /*Responsive*/
 /*992px - 1200px*/
 @media screen and (max-width: 1200px) {
    .container {
       width: 960px;
    }
+
+   .white-box{
+      width: 15%;
+      top: 2247px;   
+   }
 }
 
+
+/*768px-992px*/
 @media screen and (max-width: 992px) {
    .container {
       width: 720px;
@@ -299,6 +505,24 @@ body {
 
    .header__item:not(:last-child) {
       margin-right: 10px;
+   }
+
+   .jubs__item {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .expirience__item {
+      height: 256px;
+      padding: 30px 0px 0px 30px;
+   }
+
+   .text__sections {
+      max-width: 350px;
+      margin: 0px 0px 0px 30px;
    }
 }
 
@@ -354,7 +578,6 @@ body {
       transform: scale(1) translate(0px, -50%);
    }
 
-
    .menu__icon._activete span {
       transform: scale(0) translate(0px, -50%);
    }
@@ -392,8 +615,47 @@ body {
    .header__nav._activete {
       left: 0;
    }
+
+   .jubs__item:not(:last-child) {
+      margin-bottom: 40px;
+   }
+
+   .jobs__link {
+      width: 100%;
+   }
+
+   .expirience__logo {
+      width: 80px;
+      height: 80px;
+      float: left;
+      align-items: center;
+   }
+
+   .expirience__section {
+      margin-left: 40px;
+   }
+
+   .expirience__item {
+      height: 256px;
+      padding: 30px 0px 0px 15px;
+   }
+
+   .white-box{
+      width: 15%;
+      top: 2549px;   
+   }
+}
+@media screen and (max-width: 709px){
+   .white-box{
+      width: 12%;   
+   }
 }
 
+@media screen and (max-width: 601px){
+   .white-box{
+      width: 9%;   
+   }
+}
 /*0-576px*/
 @media screen and (max-width: 576px) {
    .container {
@@ -403,11 +665,50 @@ body {
    .main-page__email {
       width: 100%;
    }
-   
-   
+
+
    .main-page__btn {
       width: 100%;
       margin-left: 0px;
       margin-top: 20px;
    }
+   .expirience__logo{
+      margin: 0 auto;
+   }
+   .expirience__logo img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      float: none;
+      align-items: center;
+      padding-top: 0px;
+   }
+
+   .expirience__section {
+      margin-left: 10px;
+   }
+
+   .expirience__item {
+      height: 256px;
+      padding: 20px 20px 20px 20px;
+   }
+   .title__text {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      padding-bottom: 17px;
+   }
+   
+   .autor__text {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 156%;
+   }
+   .white-box{
+      display: none;   
+   }
+   .text__sections {
+      margin: 15px 0px 0px 0px;
+   }
+   
 }
