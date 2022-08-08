@@ -680,9 +680,232 @@ body {
    padding: 59px;
 }
 
-/*------------*/
-/*------------*/
-/*------------*/
+/*------JobAp------*/
+.jobapp {
+   background: #EBEEF3;
+}
+
+.jobapp__container {
+   position: relative;
+   background-image: url('../img/jobapp/cover4.png');
+   background-position: 427px 344px;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+.jobapp__body {}
+
+.jobapp__title {
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 120%;
+   text-align: center;
+   padding: 59px 0px 35px;
+}
+
+.jobapp__text {
+   max-width: 552px;
+   text-align: center;
+   margin: 0 auto;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 145%;
+   padding-bottom: 147px;
+}
+
+.jobapp__links {
+   padding-bottom: 187px;
+}
+
+.jobapp__link:not(:last-child) {
+   margin-right: 41px;
+}
+
+/*------Recruting------*/
+.recruted {
+   background: #0F1035;
+}
+
+.recruted__container {}
+
+.recruted__body {}
+
+.recruted__title {
+   max-width: 424px;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 120%;
+   color: #FFFFFF;
+   text-align: center;
+   margin: 0 auto;
+   padding: 97px 0px 40px;
+}
+
+.recruted__text {
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 145%;
+   text-align: center;
+   color: #FFFFFF;
+}
+
+.recruted__form {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 40px 0px 110px;
+}
+
+.recruted__email {
+   width: 340px;
+   height: 46px;
+   background: #FFFFFF;
+   border: 2px solid #FFFFFF;
+   border-radius: 3px;
+   outline: none;
+   padding: 13px 0px 13px 21px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 125%;
+   color: rgba(0, 0, 0, 0.5);
+}
+
+.recruted__btn {
+   background: #FF1100;
+   border-radius: 3px;
+   margin-left: 32px;
+   padding: 12px 26px 14px 27px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 125%;
+   text-align: center;
+   color: #FFFFFF;
+}
+
+/*------Footer------*/
+.footer {
+   background: #F6F6F8;
+}
+
+.footer__top {}
+
+.footer-top__container {}
+
+.container-footer {
+   max-width: 1067px;
+   padding: 0px 15px;
+   margin: 0px auto;
+   box-sizing: content-box;
+}
+
+.footer-top__body {
+   border-bottom: 1px solid #000;
+}
+
+.footer-top__sections-side {
+   display: flex;
+}
+
+.sections-side__item {}
+
+.sections-side__item:not(:last-child) {
+   margin-right: 32px;
+}
+
+.footer-top__items {
+   display: flex;
+   padding-top: 80px;
+   padding-bottom: 87px;
+   justify-content: space-between;
+}
+
+.footer-top__item {}
+
+.footer-top__item:not(:last-child) {
+   padding-bottom: 15px;
+}
+
+.footer-top__logo {
+   padding-bottom: 28px;
+}
+
+.footer-top__link {}
+
+.link-apple {
+   margin-right: 8px;
+}
+
+.link-google {}
+
+.footer-top__title {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 129%;
+   padding-bottom: 32px;
+}
+
+.footer-top__list {}
+
+.footer-top__item-link {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 129%;
+   color: #000000;
+}
+
+.footer-top__item-link:hover {
+   text-decoration: underline;
+}
+
+.footer__bottom {}
+
+.footer-bottom__container {}
+
+.container-footer {}
+
+.footer-bottom__body {
+   display: flex;
+   justify-content: space-between;
+   padding-top: 18px;
+}
+
+.footer-bottom__item {
+   display: flex;
+}
+
+.footer-bottom__text {
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 133%;
+}
+
+.footer-bottom__privaci {
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 133%;
+   margin-left: 24px;
+   color: #000000;
+}
+
+.footer-bottom__terms {
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 133%;
+   margin-left: 19px;
+   color: #000000;
+}
+
+.footer-bottom__terms:hover,
+.footer-bottom__privaci:hover {
+   text-decoration: underline;
+}
+
+.footer-bottom__sicial {}
+.footer-bottom__sicial:not(:last-child){
+   margin-right: 18px;
+}
+.social__logo {}
+
 /*------------*/
 /*Responsive*/
 /*992px - 1200px*/
@@ -695,6 +918,10 @@ body {
       width: 15%;
       top: 2247px;
    }
+
+   .jobapp__container {
+      background-position: 290px 344px;
+   }
 }
 
 
@@ -702,6 +929,10 @@ body {
 @media screen and (max-width: 992px) {
    .container {
       width: 720px;
+   }
+
+   .container-footer {
+      max-width: 720px;
    }
 
    .header__item:last-child {
@@ -733,12 +964,24 @@ body {
       max-width: 350px;
       margin: 0px 0px 0px 30px;
    }
+
+   .jobapp__container {
+      background-position: 290px 344px;
+   }
+
+   .sections-side__item:not(:last-child) {
+      margin-right: 10px;
+   }
 }
 
 /*576px-768px*/
 @media screen and (max-width: 768px) {
    .container {
       width: 540px;
+   }
+
+   .container-footer {
+      max-width: 540px;
    }
 
    .header__nav {
@@ -857,6 +1100,32 @@ body {
       width: 15%;
       top: 2549px;
    }
+
+   .footer-top__items {
+      display: flex;
+      padding-bottom: 40px;
+      justify-content: baseline;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
+
+   .footer-top__sections-side {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .footer-top__title{
+      padding-top: 20px;
+   }
+
+   .footer-bottom__item {
+      display: flex;
+      flex-wrap: wrap;
+   }
+
+   .footer-bottom__sicial {
+      padding-top: 10px;
+   }
 }
 
 @media screen and (max-width: 709px) {
@@ -882,7 +1151,9 @@ body {
       width: 100%;
    }
 
-
+.virtualcareer__link{
+   width: 100%;
+}
    .main-page__btn {
       width: 100%;
       margin-left: 0px;
@@ -936,11 +1207,51 @@ body {
    .hiring__link {
       width: 100%;
    }
+
    .leadingcareer__items {
+      background-image: none;
       padding: 10px;
    }
+
    .leadingcareer__logo img {
       max-width: 290px;
+   }
+
+   .jobapp__container {
+      position: relative;
+      background-image: url('../img/jobapp/cover4.png');
+      background-position: 0px 344px;
+      background-repeat: no-repeat;
+      position: relative;
+   }
+
+   .apple,
+   .google {
+      display: block;
+      margin: 0 auto;
+   }
+
+   .google {
+      width: 187px;
+      height: 56;
+   }
+
+   .recruted__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0px 110px;
+   }
+
+   .recruted__email {
+      width: 100%;
+   }
+
+   .recruted__btn {
+      width: 100%;
+      margin-left: 0px;
+      margin-top: 30px;
    }
 }
 
@@ -950,7 +1261,7 @@ body {
       top: 2635px;
    }
 
-   
+
 }
 
 @media screen and (max-width: 406px) {
