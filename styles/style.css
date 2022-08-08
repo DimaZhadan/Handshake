@@ -473,14 +473,106 @@ body {
 .white-box {
    position: absolute;
    width: 35%;
-   height: 256px;
+   height: 257px;
    background: #FFFFFF;
    top: 2056px;
    right: 0;
    z-index: 11;
 }
 
-/*------------*/
+/*------Hiring------*/
+.hiring {
+   background: #F6F6F8;
+}
+
+.hiring__container {
+   padding-bottom: 111px;
+}
+
+.container {}
+
+.hiring__body {
+   display: flex;
+   flex-direction: column;
+}
+
+.hiring__title {
+   max-width: 744px;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 120%;
+   text-align: center;
+   margin: 0 auto;
+   padding: 106px 0px 40px;
+}
+
+.hiring__text {
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 145%;
+   text-align: center;
+   padding-bottom: 101px;
+}
+
+.hiring__items {}
+
+.hiring__item {
+   display: flex;
+}
+
+.item__unit {}
+
+.item__unit:not(:last-child) {
+   margin-right: 30px;
+}
+
+.item__unit:last-child {
+   margin-top: -15px;
+}
+
+.company__title {
+   width: 132px;
+   position: relative;
+   top: 30px;
+   left: 80px;
+}
+
+
+.company__logo {
+   background: #FFFFFF;
+   border-bottom: 3px solid #C2CCD4;
+}
+
+.company__description {
+   margin-top: 16px;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 114%;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.hiring__link {
+   display: flex;
+   justify-content: center;
+   width: 144px;
+   height: 52px;
+   background: #190083;
+   border-radius: 3px;
+   padding: 15px 24px 17px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 125%;
+   color: #fff;
+   margin: 80px auto 0px;
+}
+
+.hiring__link:hover {
+   text-decoration: underline;
+   background: #6548e6;
+   transition: 500ms;
+}
+
 /*------------*/
 /*------------*/
 /*------------*/
@@ -670,6 +762,7 @@ body {
 
 @media screen and (max-width: 601px) {
    .white-box {
+      height: 256px;
       width: 9%;
    }
 }
