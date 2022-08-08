@@ -525,10 +525,14 @@ body {
 }
 
 .company__title {
-   width: 132px;
-   position: relative;
-   top: 30px;
+   display: none;
+   position: absolute;
    left: 80px;
+}
+
+.hiring__items:hover .company__title{
+   display: block;
+   
 }
 
 .company__logo {
@@ -826,6 +830,10 @@ body {
    .white-box {
       width: 9%;
       top: 2615px;
+   }
+
+   .hiring__link {
+      width: 100%;
    }
 }
 
