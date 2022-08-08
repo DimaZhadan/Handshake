@@ -530,9 +530,9 @@ body {
    left: 80px;
 }
 
-.hiring__items:hover .company__title{
+.hiring__items:hover .company__title {
    display: block;
-   
+
 }
 
 .company__logo {
@@ -577,8 +577,109 @@ body {
    height: 232px;
 }
 
-/*------------*/
-/*------------*/
+/*----Yellowbox--------*/
+.virtualcareer {
+   background: #F3E02B;
+}
+
+.virtualcareer__container {}
+
+.virtualcareer__body {
+   padding-bottom: 111px;
+}
+
+.virtualcareer__title {
+   max-width: 441px;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 120%;
+   text-align: center;
+   margin: 0 auto;
+   padding: 111px 0px 41px;
+}
+
+.virtualcareer__text {
+   max-width: 647px;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 145%;
+   text-align: center;
+   margin: 0 auto;
+   padding: 0px 0px 79px;
+}
+
+.virtualcareer__link {
+   display: flex;
+   justify-content: center;
+   width: 144px;
+   height: 52px;
+   background: #190083;
+   border-radius: 3px;
+   padding: 15px 24px 17px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 125%;
+   color: #fff;
+   margin: 0 auto;
+}
+
+.virtualcareer__link:hover {
+   text-decoration: underline;
+   background: #6548e6;
+   transition: 500ms;
+}
+
+/*-----leadingcareer-------*/
+.leadingcareer {}
+
+.leadingcareer__container {}
+
+.leadingcareer__body {
+   padding-bottom: 110px;
+}
+
+.leadingcareer__title {
+   max-width: 459px;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 120%;
+   text-align: center;
+   margin: 0 auto;
+   padding: 110px 0px 100px;
+}
+
+.leadingcareer__items {
+   position: relative;
+   background-image: url('../img/leadingcareer/cover3.png');
+   background-position: right;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   padding: 80px;
+}
+
+.leadingcareer__item {
+   max-width: 500px;
+   height: 474px;
+   background-color: #fff;
+   padding-top: 71px;
+}
+
+.leadingcareer__text {
+   max-width: 362px;
+   text-align: center;
+   margin: 0 auto;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 145%;
+}
+
+.leadingcareer__logo {
+   display: flex;
+   justify-content: center;
+   padding: 59px;
+}
+
 /*------------*/
 /*------------*/
 /*------------*/
@@ -835,6 +936,12 @@ body {
    .hiring__link {
       width: 100%;
    }
+   .leadingcareer__items {
+      padding: 10px;
+   }
+   .leadingcareer__logo img {
+      max-width: 290px;
+   }
 }
 
 @media screen and (max-width: 567px) {
@@ -842,6 +949,8 @@ body {
       width: 9%;
       top: 2635px;
    }
+
+   
 }
 
 @media screen and (max-width: 406px) {
