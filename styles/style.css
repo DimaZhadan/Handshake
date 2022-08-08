@@ -782,6 +782,12 @@ body {
    color: #FFFFFF;
 }
 
+.recruted__btn:hover{
+   cursor: pointer;
+   background: #c21b0f;
+   transition: 500ms;
+}
+
 /*------Footer------*/
 .footer {
    background: #F6F6F8;
