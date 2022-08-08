@@ -86,5 +86,5 @@ dots.forEach((item, indexDot) => {
    })
 })
 
-setInterval(nextslide, 6000);
+window.setInterval(nextslide, 9000);
 
