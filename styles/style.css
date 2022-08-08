@@ -520,14 +520,8 @@ body {
    display: flex;
 }
 
-.item__unit {}
-
-.item__unit:not(:last-child) {
-   margin-right: 30px;
-}
-
-.item__unit:last-child {
-   margin-top: -15px;
+.item__unit {
+   width: 190px !important;
 }
 
 .company__title {
@@ -537,8 +531,9 @@ body {
    left: 80px;
 }
 
-
 .company__logo {
+   width: 190px;
+   height: 190px;
    background: #FFFFFF;
    border-bottom: 3px solid #C2CCD4;
 }
@@ -571,6 +566,11 @@ body {
    text-decoration: underline;
    background: #6548e6;
    transition: 500ms;
+}
+
+.swiper {
+   width: 100%;
+   height: 232px;
 }
 
 /*------------*/
