@@ -31,7 +31,7 @@
                         <a href="#" class="header-top__link">Career Centers</a>
                      </li>
                   </ul>
-                  <a href="#">Log in</a>
+                  <a href="#" id="logIn">Log in</a>
                </div>
             </div>
          </div>
@@ -568,6 +568,20 @@
       </footer>
       <div class="white-box">
          <span></span>
+      </div>
+   </div>
+   <div id="wrapper-modal">
+      <div id="overlay"></div>
+      <div id="modal-window">
+         <form action="#" class="lofin-form">
+            <caption>Type your email:</caption>
+            <input type="email" name="user-email" id="userEmail" placeholder="Email" required>
+            <caption>Type your password:</caption>
+            <input type="password" name="user-pass" id="userPass" placeholder="Password" required>
+            <button id="btn-close" type="reset">Close</button>
+            <button id="btn-submit" type="submit">Sig in</button>
+         </form>
+         <a href="index1.html" class="registration-link">Or create an account</a>
       </div>
    </div>
    <button class="body__up-btn" id="upbtn"><img src="img/upbutton/up.svg" alt="Up button"></button>

@@ -116,3 +116,25 @@ const swiper = new Swiper('.swiper', {
      }
    }
  });
+
+
+//Modal Log In
+
+var btnOpen = document.getElementById('logIn');
+var modal = document.getElementById('wrapper-modal');
+
+var overlay = document.getElementById('overlay');
+var btnClose = document.getElementById('btn-close');
+
+btnOpen.addEventListener('click',function(){
+    modal.classList.add('active');
+});
+
+function closeModal(){
+    modal.classList.remove('active');
+}
+
+overlay.addEventListener('click',closeModal);
+btnClose.addEventListener('click',closeModal);
+
+top = ''; window. scrollTo(0, parseInt(scrollY || '0') * -1);
